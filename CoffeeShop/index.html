@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="photo/Coffee-removebg-preview.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>CoffeeShop</title>
+</head>
+<body>
+    <section id="home" >
+        <nav >
+            <div class="logo">
+                <img src="photo/Coffee-removebg-preview.png" alt="">
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="icon">
+                <i class='bx bxs-heart' id="favorite"></i>
+                <i class='bx bxs-cart' id="cart"></i>
+            </div>
+        </nav>
+        <div class="main">
+            <div class="text">
+                <h2>Welcome to<span>"Cafe de Luna"</span>where every cup tells a story and every sip is an experience.
+                </h2>
+            </div>
+            <div class="main_ph">
+                <img src="photo/co1.png" alt="">
+            </div>
+        </div>
+        <div class="main_btn">
+            <a href="#">Order Now</a>
+            <i class="bx bx-right-arrow"></i>
+        </div>
+    </section>
+    <div class="about" id="about">
+        <div class="about_main">
+            <div class="cafe">
+                <img src="photo/cafedelunainter.png" alt="">
+            </div>
+            <div class="about_text">
+                <h1><span>About</span></h1>
+                <h3>Why Choose us?</h3>
+                <p>
+                    Immerse yourself in the cozy and inviting atmosphere of Cafe de Lune.<br>Whether you're here for a
+                    quiet solo retreat or a lively gathering with friends,<br>our cafe provides the perfect backdrop for
+                    memorable moments.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="menu" id="menu">
+        <h1>Menu</h1>
+
+        <div class="menu_box">
+            <div class="menu_card">
+                <div class="menu_image">
+                    <img src="photo/hotchoco.jpeg" alt="">
+                </div>
+                <div class="small_card">
+                    <i class='bx bxs-heart'></i>
+                </div>
+                <div class="menu_info">
+                    <h2>Hot Chocolate</h2>
+                    <h3>$3.00</h3>
+                    <a href="#" class="menu_btn ">Order Now</a>
+                    <div class="al">
+                        <i class="bx bxs-cart"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_card">
+                <div class="menu_image">
+                    <img src="photo/americano.jpeg" alt="">
+                </div>
+                <div class="small_card">
+                    <i class='bx bxs-heart'></i>
+                </div>
+                <div class="menu_info">
+                    <h2>Americano</h2>
+                    <h3>$3.50</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                    <div class="al">
+                        <i class="bx bxs-cart"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_card">
+                <div class="menu_image">
+                    <img src="photo/latte.jpeg" alt="">
+                </div>
+                <div class="small_card">
+                    <i class='bx bxs-heart'></i>
+                </div>
+                <div class="menu_info">
+                    <h2>Latte</h2>
+                    <h3>$3.50</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                    <div class="al">
+                        <i class="bx bxs-cart"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_card">
+                <div class="menu_image">
+                    <img src="photo/cappi.jpeg" alt="">
+                </div>
+                <div class="small_card">
+                    <i class='bx bxs-heart'></i>
+                </div>
+                <div class="menu_info">
+                    <h2>Cappuccino</h2>
+                    <h3>$3.50</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                    <div class="al">
+                        <i class="bx bxs-cart"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu_card">
+                <div class="menu_image">
+                    <img src="photo/bubbletea.jpg" alt="">
+                </div>
+                <div class="small_card">
+                    <i class='bx bxs-heart'></i>
+                </div>
+                <div class="menu_info">
+                    <h2>Bubble Tea</h2>
+                    <h3>$4.50</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                    <div class="al">
+                        <i class="bx bxs-cart"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="cartList"></div>
+
+            <div class="menu_card">
+                <div class="menu_image">
+                    <img src="photo/tea.jpeg" alt="">
+                </div>
+                <div class="small_card">
+                    <i class='bx bxs-heart'></i>
+                </div>
+                <div class="menu_info">
+                    <h2>Tea</h2>
+                    <h3>$1.50</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                    <div class="al">
+                        <i class="bx bxs-cart"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_card">
+                <div class="menu_image">
+                    <img src="photo/chocofondant.jpeg" alt="">
+                </div>
+                <div class="small_card">
+                    <i class='bx bxs-heart'></i>
+                </div>
+                <div class="menu_info">
+                    <h2>Souffle</h2>
+                    <h3>$2.50</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                    <div class="al">
+                        <i class="bx bxs-cart"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_card">
+                <div class="menu_image">
+                    <img src="photo/waffles.jpeg" alt="">
+                </div>
+                <div class="small_card">
+                    <i class='bx bxs-heart'></i>
+                </div>
+                <div class="menu_info">
+                    <h2>Waffle</h2>
+                    <h3>$2.50</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                    <div class="al">
+                        <i class="bx bxs-cart"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_card">
+                <div class="menu_image">
+                    <img src="photo/balli.jpeg" alt="">
+                </div>
+                <div class="small_card">
+                    <i class='bx bxs-heart'></i>
+                </div>
+                <div class="menu_info">
+                    <h2>Honey Cake</h2>
+                    <h3>$2.50</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                    <div class="al">
+                        <i class="bx bxs-cart"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_card">
+                <div class="menu_image">
+                    <img src="photo/sanseb.jpeg" alt="">
+                </div>
+                <div class="small_card">
+                    <i class='bx bxs-heart'></i>
+                </div>
+                <div class="menu_info">
+                    <h2>Cheesecake</h2>
+                    <h3>$4.50</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                    <div class="al">
+                        <i class="bx bxs-cart"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_card">
+                <div class="menu_image">
+                    <img src="photo/mochi.jpeg" alt="">
+                </div>
+                <div class="small_card">
+                    <i class='bx bxs-heart'></i>
+                </div>
+                <div class="menu_info">
+                    <h2>Mochi</h2>
+                    <h3>$1.50</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                    <div class="al">
+                        <i class="bx bxs-cart"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_card">
+                <div class="menu_image">
+                    <img src="photo/brownie.jpeg" alt="">
+                </div>
+                <div class="small_card">
+                    <i class='bx bxs-heart'></i>
+                </div>
+                <div class="menu_info">
+                    <h2>Brownie</h2>
+                    <h3>$3.50</h3>
+                    <a href="#" class="menu_btn">Order Now</a>
+                    <div class="al">
+                        <i class="bx bxs-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="favoriteList"></div>
+        <!-- SERVICE -->
+        <div class="order" id="services">
+           
+            <div class="order_main">
+                <div class="order_image">
+                </div>
+            </div>
+            <div class="container">
+                <div class="form-box">
+                    <h1 id="title">
+                        Sign Up
+                    </h1>
+                    <form>
+                        <div class="input-group">
+                            <div class="input-field" id="nameField">
+                                <i class="fa-solid fa-user"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 448 512">
+                                    <path
+                                        d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+                                </svg>
+                                <input type="text" placeholder="Name">
+                            </div>
+                            <div class="input-field">
+                                <i class="fa-solid fa-envelope"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 512 512">
+                                    <path
+                                        d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                                </svg>
+                                <input type="email" placeholder="E-mail">
+                            </div>
+                            <div class="input-field">
+                                <i class="fa-solid fa-lock"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 448 512">
+                                    <path
+                                        d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z" />
+                                </svg>
+                                <input type="password" placeholder="Password">
+
+                            </div>
+                            <p>Lost password <a href="#">Click Here!</a></p>
+                        </div>
+                        <div class="btn-field">
+                            <button type="button" id="signupBtn">Sign up</button>
+                            <button type="button" id="signinBtn" class="disable">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- FOOTER -->
+        <footer id="contact">
+            <div class="footer_main">
+                <div class="footer_tag">
+                    <h2>Location</h2>
+                    <p>Azerbaijan</p>
+                </div>
+                <div class="footer_tag">
+                    <h2>Contact </h2>
+                    <p>+994 709 15 65</p>
+                    <p class="gmail">cafedeluna@gmail.com</p>
+                </div>
+                <div class="footer_tag">
+                    <h2>Service</h2>
+                    <p class="fast">Fast Delivery</p>
+                    <p>Easy payment</p>
+                </div>
+                <div class="footer_tag">
+                    <h2>Follows</h2>
+                    <i class='bx bxl-instagram-alt'></i>
+                    <i class='bx bxl-facebook-circle'></i>
+                </div>
+            </div>
+        </footer>
+    </div>
+  
+   
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
